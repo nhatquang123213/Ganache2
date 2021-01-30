@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/ln_bestsell">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/shape_linear"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/best_seller_star"
+            android:layout_marginTop="20dp"
+            android:layout_alignRight="@id/img_bestsell"
+            android:layout_marginRight="0dp"></ImageView>
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="230dp"
+            android:layout_height="350dp"
+            android:src="@drawable/cake_bestsell"
+            android:id="@+id/img_bestsell"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"></ImageView>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Rose"
+            android:textColor="@color/black"
+            android:id="@+id/name_bestsell"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/img_bestsell"
+            android:layout_alignLeft="@id/img_bestsell"
+            ></TextView>
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fivestar"
+            android:layout_below="@+id/img_bestsell"
+            android:layout_marginTop="10dp"
+            android:layout_alignRight="@id/img_bestsell"></ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

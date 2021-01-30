@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NumberPickerTheme" >
+        <!-- Set NumberPicker divider color transparent to remove divider -->
+        <item name="colorControlNormal">#00FFFFFF</item>
+    </style>
+</resources>

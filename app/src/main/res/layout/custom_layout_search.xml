@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp" android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:paddingTop="50dp"
+    android:id="@+id/rl_search">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_search_re"
+        android:layout_marginTop="50dp"
+        android:outlineAmbientShadowColor="#05000000"
+        android:paddingTop="80dp"
+        android:layout_height="200dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/name_search"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Cupcake"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FF5252"
+        android:id="@+id/price_search"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/name_search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="5$"></TextView>
+    </RelativeLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:scaleType="centerCrop"
+        android:layout_width="110dp"
+        android:id="@+id/img_search"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cupcake"></de.hdodenhof.circleimageview.CircleImageView>
+</RelativeLayout>

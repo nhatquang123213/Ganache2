@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/homeretag"></ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/will"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/wiluhav"></ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/search_linear"
+                android:background="@drawable/shape_linear"
+                android:layout_below="@id/will"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_home"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/searchicon"></ImageButton>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:lines="1"
+                    android:background="@null"
+                    android:id="@+id/edt_search"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center"
+                    android:ems="15"
+                    android:layout_height="wrap_content"></EditText>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bestsell"
+                android:layout_below="@id/search_linear"
+                android:layout_alignLeft="@+id/search_linear"
+                android:src="@drawable/bestselling"
+                android:layout_marginTop="20dp"></ImageView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rc_bestsell"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:layout_below="@id/bestsell"></androidx.recyclerview.widget.RecyclerView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/catetxt"
+                android:layout_below="@id/rc_bestsell"
+                android:layout_alignLeft="@+id/search_linear"
+                android:src="@drawable/ategory_txt"
+                android:layout_marginTop="20dp"></ImageView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:numColumns="3"
+                android:id="@+id/rc_cate"
+                android:layout_below="@id/catetxt">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ganache</string>
+    <string-array name="spinnerItems">
+        <item>6-inch</item>
+        <item>8-inch</item>
+        <item>10-inch</item>
+    </string-array>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/rl_cate"
+    android:background="@drawable/shape_cate"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/img_cate"
+        android:layout_centerVertical="true"
+            android:src="@drawable/image_custom_cart">
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_cate"
+            android:orientation="vertical">
+            <TextView
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/name_cate"
+                android:layout_marginTop="10dp"
+                android:text="Cheesecake"
+                ></TextView>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_cate"
+                android:textSize="10dp"
+                android:textColor="#99000000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Small cake baked in a cup-shaped"
+                ></TextView>
+    </LinearLayout>
+
+</RelativeLayout>

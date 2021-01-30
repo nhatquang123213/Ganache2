@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    tools:context=".Signup">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/roup6" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="@color/theme"
+        android:textColorLink="@color/theme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@id/editTextPass"
+         />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="@color/theme"
+        android:textColorLink="@color/theme"
+        android:layout_above="@id/editTextPassRe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+         />
+
+
+    <EditText
+        android:id="@+id/editTextPassRe"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/editTextPhone"
+        android:layout_marginBottom="30dp"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="@color/theme"
+        android:textColorLink="@color/theme"
+         />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="@color/theme"
+        android:textColorLink="@color/theme"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/imageBtnsignup"
+        android:layout_marginBottom="50dp"
+         />
+
+    <ImageButton
+        android:id="@+id/imageBtnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@null"
+        app:srcCompat="@drawable/signupbt" />
+
+    <ImageButton
+        android:id="@+id/back_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        app:srcCompat="@drawable/chevronleft" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        app:srcCompat="@drawable/signup1" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editTextEmail"
+        android:layout_above="@id/editTextEmail"
+        app:srcCompat="@drawable/mailaddress" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editTextPass"
+        android:layout_above="@id/editTextPass"
+        app:srcCompat="@drawable/assword" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editTextPassRe"
+        android:layout_above="@id/editTextPassRe"
+        app:srcCompat="@drawable/retypepassword1" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editTextPhone"
+        android:layout_above="@id/editTextPhone"
+        app:srcCompat="@drawable/phonenumber1" />
+
+</RelativeLayout>
